@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "flights" table = "flights">
+       
+      <id name = "ID" type = "int" column = "ID">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "fromto" column = "fromto" type = "text"/>
+      <property name = "departure" column = "departure" type = "text"/>   
+      <property name = "airline" column = "airline" type = "text"/>      
+      <property name = "Ticket" column = "Ticket" type = "int"/>    
+   </class>
+</hibernate-mapping>
